@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+    <title>Application Page</title>
+   
+    <script src="js/java.js"></script>
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    
+</head>
+
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: cyan">
+    <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="topNavBar">
+            <ul class="nav navbar-nav">
+                
+                <li> <a href=""><span class="glyphicon glyphicon-menu-item" aria-hidden="true"></span>&nbsp; Open Menu</a></li>
+                
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <input id="zipcode" type="number" placeholder="Enter your Zip code"
+                required onkeyup="myzipcode();">
+                <p id="alert"></p>
+
+                <button>Submit</button> 
+            </ul>
+           
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a target="_blank" href="">
+                        <span class="glyphicon glyphicon-king" aria-hidden="true"></span>&nbsp; Title
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp; Events
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp; Sign in
+                    </a>
+                </li>
+            </ul>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <a href="#"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>&nbsp; Supermarket</a>
+                <a href="#"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span>&nbsp; Health and Beauty</a>
+                <a href="#"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>&nbsp; Phones and Tablets</a>
+                <a href="#"><span class="glyphicon glyphicon-laptop" aria-hidden="true"></span>&nbsp; Computing</a>
+              </div>
+
+             <!--- <span onclick="openNav()">open</span> -->
+
+             <script type="text/javascript">
+                var prevScrollpos = window.pageXOffset;
+                window.onscroll = function() {
+
+                    var currentScrollpos = window.pageXOffset;
+                    if(prevScrollpos > currentScrollpos){
+                        document.getElementById("mySidenav").style.left = "0";
+                    }
+                    else {
+                        document.getElementById("mySidenav").style.left = "-330px";
+                    }
+
+                    prevScrollpos = currentScrollpos;
+                }  
+            </script>
+              
+
+        </div>
+    </div>
+</nav>
+
+
+<body data-spy="scroll" data-target="#scroll-menu" data-offset="100">
+   
+    <header id="home">
+        <div class="full-wrap hero-wrap">
+            <div class="shop">
+                <div class="shop-wrap-inside">
+                    <h1>Denver LTD.</h1>
+                    <span>It's a shopping world. Enjoy </span>
+                    <div class="purchase">
+                      <a href="#" class="btn btn-default btn-orange"><i class="fa fa-shopping-cart"></i> | Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    
+    <div class="page-layout" id="page_layout">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="desc">
+                        <h2>FEATURED PRODUCTS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="single-preview">
+                                <div class="preview-content">
+                                    <a href="#" target="_blank">
+                                        <div class="thumb" style="background-image: url(img/frut.jpg)"></div>
+                                    </a>
+                                </div>
+                                <div class="thumb-title">
+                                    <h2><a href="" target="_blank">Buy Fruits @1,750/=</a></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <div class="single-preview">
+                                <div class="preview-content">
+                                    <a href="#" target="_blank">
+                                        <div class="thumb" style="background-image: url(img/lapt.JPG)"></div>
+                                    </a>
+                                </div>
+                                <div class="thumb-title">
+                                    <h2><a href="" target="_blank">Buy Laptop @27,000/=</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h3> 
+                        A SHOP WITH THE BOGONKO'S
+                    </h3>
+                   
+            Copyright &copy;2020</script> All rights reserved<i class="fa fa-heart-o" aria-hidden="true"></a>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
